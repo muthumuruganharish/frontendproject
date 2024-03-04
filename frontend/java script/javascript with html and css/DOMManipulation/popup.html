@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal Example</title>
+    <style>
+        .overlay-background {
+            background-color: black;
+            color: white;
+            width: 100%;
+            height: 100%;
+            opacity: 0.8;
+            position: absolute;
+            display: none;
+        }
+
+        .modal {
+            background-color: white;
+            color: black;
+            position: absolute;
+            width: 40%;
+            height: 40%;
+            padding: 10px;
+            left: 40%;
+            top: 100px;
+            border-radius: 10px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay-background"></div>
+    <button onclick="showModal()">Show modal</button>
+
+    <div class="modal">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt reiciendis repellendus, praesentium aliquam illum
+            molestias mollitia odio velit modi doloremque, et vero numquam vitae voluptatem earum tempora maxime! Ducimus,
+            autem.</p>
+        <button onclick="closeModal()">Close modal</button>
+    </div>
+
+    <script >
+
+
+
+        const modal = document.querySelector(".modal");
+const overlayBackground = document.querySelector(".overlay-background");
+
+function showModal() {
+    overlayBackground.style.display = "block";
+    modal.style.display = "block";
+
+    // Implement focus trapping logic here (optional)
+}
+
+function closeModal() {
+    overlayBackground.style.display = "none";
+    modal.style.display = "none";
+}
+    </script> </body>
+</html>
