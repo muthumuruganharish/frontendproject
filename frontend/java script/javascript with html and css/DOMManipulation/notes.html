@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="frontend.css">
+
+</head>
+
+<body>
+    <div class="booknotes">
+        book notes
+
+    </div>
+
+    <div class="container">
+        <div class="bookcontainer">
+            <h2>rich dad poor dad</h2>
+            <h5>robert kiyosoki</h5>
+            <p>
+                The book is based on Kiyosaki's personal experiences with his two fathers - his biological father (poor
+                dad) and his best friend's father (rich dad). The book provides a guide to financial literacy and
+                teaches readers about the importance of financial education, creating wealth, and achieving financial
+                freedom.
+            </p>
+            <button class="buttonclose" onclick="deletebook(event)">close</button>
+
+        </div>
+
+
+    </div>
+
+    <button class="plusbutton" id="addpopup">+
+
+    </button>
+    <div class="popup-overlay">
+
+    </div>
+
+    <div class="popupbox">
+        <h2>add books</h2>
+        <form >
+            <input type="text" placeholder="book title" id="book-title-input">
+            <input type="text" placeholder="book author" id ="book-author-input">
+            <textarea placeholder="type somthing  " id="book-description-input">
+                
+
+            </textarea>
+            <br>
+
+            <button id="add-book">add</button>
+            
+                <button id="cancel-popup">cancel</button>
+        </form>
+
+    </div>
+
+    <script src="frontend.js"></script>
+</body>
+
+</html>
