@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Ojuju", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    /* Replace with your desired font weight */
+    font-style: normal;
+    font-size: 40px;
+}
+
+
+
+
+.booknotes {
+    background-color: chocolate;
+    color: whitesmoke;
+    padding: 10px;
+}
+
+
+.container {
+    padding: 10px;
+    font-size: 25px;
+}
+
+.bookcontainer {
+    padding: 15px;
+    width: 40%;
+    background-color: black;
+    color: aliceblue;
+    border-radius: 15px;
+    margin: 30px;
+    display: inline-block;/*  helps to display parallel(in grid form) */
+    vertical-align: top;
+}
+
+.bookcontainer h2 {
+    color: chocolate;
+}
+.buttonclose
+{
+    background-color: chocolate;
+    color: white;
+    border-radius: 30px;
+    font-size: 20px;
+    padding: 15px;
+    border:none;
+}
+
+.plusbutton{
+    font-size: 40px;
+    padding: 20px;
+    background-color: chocolate;
+    color: white;
+    border-radius: 100%;
+    position: fixed;
+    top: 620px;
+    left: 1440px;
+    border: none;
+        
+}
+
+.popup-overlay
+{
+    background-color: black;
+    opacity: 0.8;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    z-index: 1;/* z-index is used to make overlay on top layer 1 is normal and 2 will overlay on 1  */
+    display: none;
+}
+
+
+.popupbox
+{
+    background-color:chocolate;
+    width: 40%;
+    padding: 40px;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 2;
+    top:20%;
+    left:20%;
+    display: none;
+
+}
+.popupbox input{
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    margin: 5px;
+    padding: 5px;
+    font-size: 20px;
+    border-bottom: solid black 2px;
+}
+.popupbox textarea{
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    margin: 5px;
+    padding: 5px;
+    font-size: 20px;
+    border: solid black 2px;
+}
+
+.popupbox input::placeholder{
+    color:black;
+}
+.popupbox textarea::placeholder{
+    color:black;
+}
+.popupbox button
+{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    font-size: 15px;
+    border-radius: 15px;
+
+}
+.popupbox input:focus{
+    outline: none;
+}
+.popupbox textarea:focus{
+    outline: none;
+}
