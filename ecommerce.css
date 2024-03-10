@@ -1,0 +1,328 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "poppins", 'sans-serif';
+
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+
+}
+
+.navbar-links {
+    display: flex;
+    column-gap: 20px;
+}
+
+.navbar-link a {
+    text-decoration: none;
+    color: #10232C;
+}
+
+.navbar-link a:hover {
+    text-decoration: underline;
+}
+
+.navbar-menu-toggle {
+    display: none;
+}
+
+/* media querry*/
+@media screen and (max-width:600px) {
+
+    .navbar-menu-toggle {
+        display: block;
+    }
+
+    .navbar-links {
+        display: none;
+    }
+    .img1{
+        display: none;
+        }
+   
+}
+
+/*    side navbar*/
+
+
+
+
+.sidenavbar {
+    top:0;
+    left:0;
+    position:fixed;
+    background-color: #10232C;
+
+    color: white;
+    padding-bottom: 20px;
+
+    width: 30%;
+    height: 683px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: none;
+    transition: 2s;
+}
+
+.sidenavbar-links a {
+    color: aliceblue;
+
+    font-size: 20px;
+
+    border-bottom: 2px solid white;
+
+    display: flex;
+    padding: 40px;
+    display: block;
+    position: relative;
+}
+.header{
+    display: flex;
+   
+    justify-content: center;
+    gap: 50px;
+
+    position: relative;
+    margin-top: 100px;
+   
+    object-fit: cover;
+    z-index: 1;
+}
+
+.shopnowbutton{
+    border-color: black;
+    border-radius: 20px;
+    font-size: 15px;
+    color:black;
+    background-color: white;
+    padding: 10px;
+    font-weight: 800;
+    margin: 15px;
+
+}
+
+body{
+    background-color: azure;
+    color: black;
+    
+}
+
+
+.header div p{
+    font-weight: 900;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.header div h1{
+    background-color: black;
+    color: white;
+    padding: 15px;
+}
+.service{
+    padding: 15px;
+    margin-top: 100px;
+    background-color:lightgrey;
+    width: 100%;
+    height: 400px;
+    border-color: black;
+    
+    
+
+}
+.service-container-1{
+
+ 
+    margin-left:500px ;
+   color: aliceblue;
+   background-color: black;
+   width: 28%;
+   padding-left: 28px;  
+   border-radius: 20px; 
+   padding-top:5px;
+   padding-bottom: 5px;
+    
+    
+    
+}
+.service-container-2 h4{
+    margin-top: 60px;
+}
+.service-container-2 h4{
+
+    font-size: 25px;
+    margin-bottom: 12px;
+    border-bottom:2px solid black ;
+    display: inline-block;
+}
+.service-container-2 p{
+    font-weight: lighter;
+    font-size: 18px;
+}
+
+.navbar-links p:hover{
+
+    font-size: 1.5em;
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+
+.shopnowbutton:hover{ 
+    border-color: white;
+    border-radius: 20px;
+    font-size: 15px;
+    color:white;
+    background-color: black;
+    padding: 10px;
+    font-weight: 800;
+    margin: 15px;
+}
+.new-arrivals{
+    margin-top: 20px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+.images{
+    position: relative;
+    flex-basis: 20%;
+    transition: transform 0.3s;
+    margin-top: 50px;
+}
+.new-arrivals button{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-top: 10px;
+    position:absolute;
+    top:50%;
+    border-color: black;
+    border-radius: 20px;
+    font-size: 15px;
+    color:black;
+    background-color: white;
+    right:150px;
+   
+
+
+}
+
+.new-arrivals button:hover
+{
+    border-color: white;
+    border-radius: 20px;
+    font-size: 15px;
+    color:white;
+    background-color: black;
+    padding: 10px;
+    font-weight: 800;
+    margin: 15px;
+}
+
+.images:hover{
+    transform: scale(1.2);
+}
+
+
+
+
+.news{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+}
+
+.news h2{
+    margin-top: 26px;
+    font-size: 38px;
+}
+
+.news p{
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+.news input{
+    margin-top: 50px;
+    padding: 11px;
+    width: 80vw;
+    border: solid black 3px;
+    font-weight: bold;
+
+}
+.news button{
+    margin-top:50px ;
+    color:white;
+    background-color: black;
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.footer{
+
+    margin-top: 20px;
+    padding: 40px;
+    background-color: #10232C;
+    color: aliceblue;
+}
+.product-section{
+
+    margin-top: 20px;
+
+}
+
+.product-search{
+    width: 80%;
+    border: solid black 2px;
+    border-radius: 20px;
+    justify-content: space-between;
+    align-items:center ;
+    padding: 10px;
+    margin: auto;    
+}
+.product-search input{
+    border: none;
+    background-color: transparent;
+    width: 100%;
+
+
+}
+.product-search input:focus{
+    outline: none;
+
+
+}
+
+.products{
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.product-box{
+    text-align: center;
+    flex-basis: 20%;/* to keep 4 pic in one row*/
+   
+}
+.product-box img{
+
+}border-radius: 10px;
+
